@@ -93,7 +93,7 @@ class TagCategoriesTheme extends Themelet
             <tr>
                 <td>Color</td>
                 <td>
-                    <input type="color" name="tc_color" value="'.$tag_color.'">
+                    <input type="text" name="tc_color" value="'.$tag_color.'">
                 </td>
             </tr>
             </table>
