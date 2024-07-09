@@ -21,9 +21,9 @@ class AutoTaggerTable extends Table
         $this->size = 100;
         $this->limit = 1000000;
         $this->set_columns([
+            new ActionColumn("tag"),
             new AutoCompleteColumn("tag", "Tag"),
             new AutoCompleteColumn("additional_tags", "Additional Tags"),
-            new ActionColumn("tag"),
         ]);
         $this->order_by = ["tag"];
         $this->table_attrs = ["class" => "zebra form"];
